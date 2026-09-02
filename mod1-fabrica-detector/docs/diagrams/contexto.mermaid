@@ -1,0 +1,24 @@
+flowchart LR
+    subgraph Apps["Squads de aplicacao — dono do conteudo"]
+        A1[A1 Industria]
+        A5[A5 EPI]
+        A6[A6 Libras]
+        A7[A7 Varejo]
+        A8[A8 Estacionamento]
+    end
+
+    Apps -->|dados brutos + criterio de rotulagem| Anot[Ferramenta de anotacao]
+    Anot --> DS[(Dataset versionado<br/>manifest.json)]
+    DS --> Train[Pipeline de treino<br/>train.py]
+    Train --> Reg[(Registro do run<br/>run.json + metricas)]
+    Reg --> Conv[Conversao<br/>PyTorch -> ONNX -> TensorRT]
+    Conv --> Pub[Publicacao<br/>contrato ONNX]
+
+    Pub --> P2[P2 Runtime de aceleracao]
+    Pub --> B3[B3 Proveniencia e versao]
+    Pub --> I1[I1 Detector generico]
+
+    I1 --> Consumidores["consumido direto por A1, A2, A3, A5, A7, A8"]
+
+    classDef factory fill:#e8f0fe,stroke:#4a6fa5,color:#1a1a1a;
+    class Anot,DS,Train,Reg,Conv,Pub factory;

@@ -1,0 +1,9 @@
+# Configuração de exemplo de uma execução de treino.
+arquitetura: yolo  # trocar conforme o tipo de modelo (detector, pose, etc.)
+epocas: 100
+batch_size: 16
+resolucao: 640
+classes_ativas:
+  - capacete
+  - sem_capacete
+precisao_alvo: fp16   # usado depois na etapa de conversão

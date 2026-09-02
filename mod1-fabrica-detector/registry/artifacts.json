@@ -1,0 +1,14 @@
+{
+  "artefatos": [
+    {
+      "artefato_id": "exemplo-v1-fp16",
+      "aplicacao": "A5",
+      "run_id": "exemplo-v1-2026-01-01",
+      "precision": "fp16",
+      "publicado_para": "P2",
+      "latencia_ms": null,
+      "versao": "1.0.0",
+      "criado_em": "AAAA-MM-DD"
+    }
+  ]
+}
