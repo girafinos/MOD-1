@@ -11,7 +11,7 @@ MOD-1 possui dois componentes, cada um com dono único:
 | B5 — Fábrica de artefatos | Coluna transversal | Produzir e publicar, com procedência, todo artefato de modelo que um componente carrega |
 | I1 — Detecção por quadro | Camada 2 · Inferência | Dizer o que há no quadro, com caixa, classe e confiança |
 
-**Fronteira explícita**: o conteúdo do dataset (imagens, critério de rotulagem, taxonomia de classes) pertence à aplicação que o encomendou. MOD-1 é dono da ferramenta, da disciplina de execução e do código do detector — não do conteúdo.
+**Fronteira explícita**: o conteúdo do dataset (imagens, critério de rotulagem, taxonomia de classes) pertence à aplicação que o encomendou. MOD-1 é dono da ferramenta, da disciplina de execução e do código do detector, não do conteúdo.
 
 ## 2. Atividades e pesos
 

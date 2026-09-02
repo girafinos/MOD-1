@@ -4,7 +4,7 @@ ODS 2026/2 · Squad Biblioteca · Componentes: B5 (Fábrica de artefatos) e I1 (
 
 ## 1. Contexto
 
-MOD-1 não é dono do conteúdo dos dados — é dono do **processo** que transforma dado bruto de qualquer squad de aplicação em artefato versionado, pronto para rodar na Jetson. As aplicações (A1, A3, A4, A5, A6, A7, A8) decidem o quê coletar e o critério de rotulagem; MOD-1 entrega a ferramenta, executa o treino, converte e publica.
+MOD-1 não é dono do conteúdo dos dados, é dono do **processo** que transforma dado bruto de qualquer squad de aplicação em artefato versionado, pronto para rodar na Jetson. As aplicações (A1, A3, A4, A5, A6, A7, A8) decidem o quê coletar e o critério de rotulagem; MOD-1 entrega a ferramenta, executa o treino, converte e publica.
 
 ```mermaid
 flowchart LR
@@ -43,7 +43,7 @@ Sequência detalhada de interação com B3, B4 e P2 em `diagrams/pipeline.mermai
 
 ## 3. Componente I1 — Detector genérico
 
-Uma única implementação de detector, parametrizada por artefato e mapa de classes — não um detector por aplicação.
+Uma única implementação de detector, parametrizada por artefato e mapa de classes, não um detector por aplicação.
 
 ```mermaid
 classDiagram
@@ -69,7 +69,7 @@ Contrato de saída (caixa, classe, confiança) é o primeiro esquema a fechar co
 | Decisão | Escolha | Motivo |
 |---|---|---|
 | Ferramenta de anotação | CVAT ou Label Studio (containerizada) | Madura, evita reconstruir UI de rotulagem do zero |
-| Versionamento de dataset | Pasta + `manifest.json` | Simples de auditar, sem dependência extra (DVC) |
+| Versionamento de dataset | Pasta + `manifest.json` | Simples de auditar, sem dependência extra |
 | Framework de treino | Ultralytics/YOLO para detecção; wrappers pontuais para outros tipos de modelo | Reaproveita competência existente na turma |
 | Contrato de inferência | Classe `Detector` única, artefato + `class_map` como parâmetro | Evita reescrever I1 por aplicação |
 | Conversão | Script único parametrizado por precisão (FP16/INT8) | Centraliza o custo de acurácia medido |
