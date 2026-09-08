@@ -1,4 +1,4 @@
-# Documento complementar — MOD-1 (Fábrica e Detecção)
+# Documento complementar - MOD-1 (Fábrica e Detecção)
 
 ODS 2026/2 · versão 4 do detalhamento de atividades · squad Biblioteca
 
@@ -8,8 +8,8 @@ MOD-1 possui dois componentes, cada um com dono único:
 
 | Componente | Camada | Missão |
 |---|---|---|
-| B5 — Fábrica de artefatos | Coluna transversal | Produzir e publicar, com procedência, todo artefato de modelo que um componente carrega |
-| I1 — Detecção por quadro | Camada 2 · Inferência | Dizer o que há no quadro, com caixa, classe e confiança |
+| B5 - Fábrica de artefatos | Coluna transversal | Produzir e publicar, com procedência, todo artefato de modelo que um componente carrega |
+| I1 - Detecção por quadro | Camada 2 · Inferência | Dizer o que há no quadro, com caixa, classe e confiança |
 
 **Fronteira explícita**: o conteúdo do dataset (imagens, critério de rotulagem, taxonomia de classes) pertence à aplicação que o encomendou. MOD-1 é dono da ferramenta, da disciplina de execução e do código do detector, não do conteúdo.
 
@@ -46,15 +46,15 @@ Peso total do squad: 16 pontos / 9 atividades / 3 pessoas ≈ 5,3 por pessoa.
 
 ## 4. Casos especiais
 
-- **Léxico de Libras (A6)**: não é treinado — é capturado por I4 (fora do MOD-1) em modo captura, corrigido à mão, e apenas registrado/versionado por B5 como qualquer outro artefato.
-- **Objetos pequenos e rápidos** (ex. bola em A4): caso reconhecidamente difícil dentro de I1, não deve ser tratado como classe comum — merece atenção própria no plano de dataset e avaliação.
+- **Léxico de Libras (A6)**: não é treinado - é capturado por I4 (fora do MOD-1) em modo captura, corrigido à mão, e apenas registrado/versionado por B5 como qualquer outro artefato.
+- **Objetos pequenos e rápidos** (ex. bola em A4): caso reconhecidamente difícil dentro de I1, não deve ser tratado como classe comum - merece atenção própria no plano de dataset e avaliação.
 
 ## 5. Plano de entregas sugerido (a validar com o squad)
 
-1. **Ciclo 1** — ferramenta de anotação no ar; formato de `manifest.json` fechado; contrato de saída do detector (caixa/classe/confiança) proposto a B1.
-2. **Ciclo 2** — pipeline de treino genérico funcionando ponta a ponta com um dataset piloto; primeira versão de I1 publicada para P2.
-3. **Ciclo 3** — conversão ONNX/TensorRT validada na placa com latência medida; suíte de avaliação exposta a B4.
-4. **Ciclo 4** — publicação recorrente para as aplicações que dependem de I1 (A1, A2, A3, A5, A7, A8); ajustes de memória/orçamento com P2.
+1. **Ciclo 1** - ferramenta de anotação no ar; formato de `manifest.json` fechado; contrato de saída do detector (caixa/classe/confiança) proposto a B1.
+2. **Ciclo 2** - pipeline de treino genérico funcionando ponta a ponta com um dataset piloto; primeira versão de I1 publicada para P2.
+3. **Ciclo 3** - conversão ONNX/TensorRT validada na placa com latência medida; suíte de avaliação exposta a B4.
+4. **Ciclo 4** - publicação recorrente para as aplicações que dependem de I1 (A1, A2, A3, A5, A7, A8); ajustes de memória/orçamento com P2.
 
 ## 6. Riscos e mitigação
 
@@ -67,6 +67,4 @@ Peso total do squad: 16 pontos / 9 atividades / 3 pessoas ≈ 5,3 por pessoa.
 
 ## 7. Glossário rápido
 
-- **Artefato**: modelo, pesos ou dado versionado que pertence à aplicação, mesmo quando produzido por MOD-1.
-- **Componente**: unidade de código com dono único (B5 ou I1), independente do artefato que carrega.
 - **Manifest**: arquivo que descreve origem, critério e integridade de uma versão de dataset ou de um run de treino.
