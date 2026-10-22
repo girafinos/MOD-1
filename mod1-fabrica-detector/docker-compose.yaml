@@ -61,5 +61,6 @@ services:
       "--source", "/app/B5/datasets/epi/test/images",
       "--max-frames", "10",
       "--conf", "0.50",
-      "--output-jsonl", "degrau_a_epi_events.jsonl"
+      # O .jsonl é salvo no container, mas você pode mapear para o host se quiser inspecionar depois.
+      "--output-jsonl", "/app/degrau_a_epi_events.jsonl" 
     ]
