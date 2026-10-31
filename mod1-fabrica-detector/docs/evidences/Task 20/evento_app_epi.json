@@ -1,0 +1,152 @@
+{
+  "message_type": "event",
+  "message_id": "faeef964-9eb8-4461-b552-8ffe6a0cd79c",
+  "schema": "ods.i1.detections",
+  "schema_version": "1.0",
+  "producer": "I1",
+  "published_at": "2026-10-31T18:14:23.267Z",
+  "captured_at": "2026-10-31T18:14:23.073Z",
+  "source_id": "cam0",
+  "session_id": "00000000-0000-4000-8000-000000000001",
+  "sequence": 0,
+  "artifact_version": "app-epi-1.0.0",
+  "payload": {
+    "frame_index": 0,
+    "image_width": 3865,
+    "image_height": 2174,
+    "detections": [
+      {
+        "detection_id": 0,
+        "class": "pessoa",
+        "confidence": 0.9184,
+        "bbox": [
+          2489,
+          2,
+          3861,
+          2174
+        ]
+      },
+      {
+        "detection_id": 1,
+        "class": "pessoa",
+        "confidence": 0.8862,
+        "bbox": [
+          1104,
+          299,
+          2515,
+          2171
+        ]
+      },
+      {
+        "detection_id": 2,
+        "class": "capacete",
+        "confidence": 0.8222,
+        "bbox": [
+          566,
+          569,
+          866,
+          837
+        ]
+      },
+      {
+        "detection_id": 3,
+        "class": "pessoa",
+        "confidence": 0.8212,
+        "bbox": [
+          438,
+          576,
+          1058,
+          2154
+        ]
+      },
+      {
+        "detection_id": 4,
+        "class": "colete",
+        "confidence": 0.8211,
+        "bbox": [
+          1325,
+          1103,
+          2254,
+          2169
+        ]
+      },
+      {
+        "detection_id": 5,
+        "class": "capacete",
+        "confidence": 0.8148,
+        "bbox": [
+          1485,
+          291,
+          2197,
+          725
+        ]
+      },
+      {
+        "detection_id": 6,
+        "class": "colete",
+        "confidence": 0.8084,
+        "bbox": [
+          462,
+          826,
+          964,
+          1537
+        ]
+      },
+      {
+        "detection_id": 7,
+        "class": "colete",
+        "confidence": 0.7984,
+        "bbox": [
+          29,
+          941,
+          473,
+          1656
+        ]
+      },
+      {
+        "detection_id": 8,
+        "class": "colete",
+        "confidence": 0.786,
+        "bbox": [
+          2714,
+          791,
+          3824,
+          2174
+        ]
+      },
+      {
+        "detection_id": 9,
+        "class": "capacete",
+        "confidence": 0.7821,
+        "bbox": [
+          2750,
+          1,
+          3527,
+          384
+        ]
+      },
+      {
+        "detection_id": 10,
+        "class": "pessoa",
+        "confidence": 0.7785,
+        "bbox": [
+          0,
+          611,
+          502,
+          2157
+        ]
+      },
+      {
+        "detection_id": 11,
+        "class": "capacete",
+        "confidence": 0.7715,
+        "bbox": [
+          181,
+          612,
+          468,
+          821
+        ]
+      }
+    ]
+  }
+}

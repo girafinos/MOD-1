@@ -1,0 +1,31 @@
+{
+  "message_type": "event",
+  "message_id": "bbe65da0-cd6e-4d48-a8d5-305377fb2717",
+  "schema": "ods.i1.detections",
+  "schema_version": "1.0",
+  "producer": "I1",
+  "published_at": "2026-10-31T18:14:28.195Z",
+  "captured_at": "2026-10-31T18:14:28.025Z",
+  "source_id": "cam0",
+  "session_id": "00000000-0000-4000-8000-000000000001",
+  "sequence": 0,
+  "artifact_version": "app-plates-1.0.0",
+  "payload": {
+    "frame_index": 0,
+    "image_width": 1280,
+    "image_height": 720,
+    "detections": [
+      {
+        "detection_id": 0,
+        "class": "placa_1L_BR",
+        "confidence": 0.9125,
+        "bbox": [
+          572,
+          410,
+          700,
+          454
+        ]
+      }
+    ]
+  }
+}
